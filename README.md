@@ -48,6 +48,12 @@ brew install git
 brew tap AdoptOpenJDK/openjdk
 brew cask install adoptopenjdk11
 ```
+if you get an error (Error: Unknown command: cask) try with:
+
+```bash
+brew tap AdoptOpenJDK/openjdk
+brew install --cask adoptopenjdk11
+```
 
 Test that java 11 is correctly installed with
 
