@@ -20,6 +20,9 @@ brew cask install adoptopenjdk11
 # install chromedriver (skip if already installed)
 brew cask install chromedriver
 
+# install selenium server stand alone (skip if already installed)
+brew install selenium-server-standalone
+
 # clone the project and launch the tests
 git clone git@github.com:facundorosonovich/blockchain-challenge.git
 cd blockchain-challenge
@@ -33,13 +36,13 @@ This will execute all the tests using your local Chrome browser.
 
 To install the dependencies we use *brew*. You can install it from here: <https://brew.sh/>
 
-## 1. Install git
+### 1. Install git
 
 ```bash
 brew install git
 ```
 
-## 2. Install Java 11 SDK
+### 2. Install Java 11 SDK
 
 ```bash
 brew tap AdoptOpenJDK/openjdk
@@ -60,15 +63,15 @@ OpenJDK Runtime Environment AdoptOpenJDK (build 11.0.6+10)
 OpenJDK 64-Bit Server VM AdoptOpenJDK (build 11.0.6+10, mixed mode)
 ```
 
-## 3. Install Gradle
+### 3. Install Gradle
 
 ```bash
 brew install gradle
 ```
 
-## 4. Install IntelliJ IDEA CE
+### 4. Install IntelliJ IDEA CE
 
-IntelliJ IDEA CE can be install from the jetbrains website: <https://www.jetbrains.com/idea/download/#section=mac>  
+IntelliJ IDEA CE can be installed from the jetbrains website: <https://www.jetbrains.com/idea/download/#section=mac>  
 It can also be installed using brew:
 
 ```bash
@@ -81,7 +84,7 @@ For latest brew versions, please use
 brew install --cask intellij-idea-ce
 ```
 
-## 5. Install chromedriver
+### 5. Install chromedriver
 
 ```bash
 brew cask install chromedriver
@@ -93,7 +96,7 @@ For latest brew versions, please use
 brew install --cask chromedriver
 ```
 
-## 6. Install geckodriver
+### 6. Install geckodriver
 
 To test with firefox we need to install the geckodriver
 
@@ -101,10 +104,16 @@ To test with firefox we need to install the geckodriver
 brew install geckodriver
 ```
 
-## 7. Install selenium server standalone
+### 7. Install selenium server standalone
 
 ```bash
 brew install selenium-server-standalone
+```
+
+## Executing the test
+To run the demo test
+```bash
+./gradlew test --tests 'blockchain.BlockchainDemoTest.blockchainDemoTest'
 ```
 
 
