@@ -6,7 +6,7 @@
 
 ## Description
 
-FRIDAY is The Fork new web automation testing framework that will replace the well-known JARVIS project. It will cover TFM3 and WNG tests. It is being developed by the QA team using Java, Gradle, Selenium and Zalenium.
+BLOCKCHAIN-CHALLENGE is an e2e demo framework. It was developed using Java, Gradle, and Selenium.
 
 ## Quickstart
 
